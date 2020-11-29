@@ -1,8 +1,11 @@
 version: '3'
 services:
-
   wordpress:
+    depends_on:
+      - db
     image: wordpress:latest
+    volumes:
+    wordpress_files:/var/www/html
     ports:
       - "8000:80"
     restart: always
@@ -12,5 +15,5 @@ services:
       WORDPRESS_DB_PASSWORD: DbPASSWORD
       WORDPRESS_DB_HOST: DbHOST
 
-volumes:
-  db_data: {}
+ db:
+ 
