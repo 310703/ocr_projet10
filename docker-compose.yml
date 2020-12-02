@@ -2,7 +2,7 @@ version: '3.3'
 services:
   wordpress:
     depends_on:
-      - db
+      - MasterDB
     image: wordpress:latest
     volumes:
       - ./wordpress_files:/var/www/html
