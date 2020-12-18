@@ -12,3 +12,5 @@ services:
       WORDPRESS_DB_USER: DbUSER
       WORDPRESS_DB_PASSWORD: DbPASSWORD
       WORDPRESS_DB_HOST: DbHOST
+      ACCESSKEY: IAMUserCredentials
+      SECRETKEY: IAMUserCrednetials.SecretAccessKey
